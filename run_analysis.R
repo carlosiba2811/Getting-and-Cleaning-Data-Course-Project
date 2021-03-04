@@ -64,10 +64,4 @@
   library(plyr);
   data2<-aggregate(. ~subject + activity, data, mean)
   data2<-data2[order(data2$subject,data2$activity),]
-  write.table(data2, file = "tidy_dataset.txt",row.name=FALSE)
-
-
-
-
-
-
+  write.table(data2, file = "tidydataset.txt",row.name=FALSE)
